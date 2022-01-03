@@ -1,0 +1,43 @@
+.Toaster__List {
+  bottom: 0;
+  right: 0;
+  margin: 24px;
+  position: fixed;
+  z-index: 999999999;
+}
+
+.Toaster__List > .Toaster__Item__animation {
+  margin-top: 0.5em;
+}
+
+.Toaster__Item__animation {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.Toaster__Item__animation.Toaster__Item__animation--active {
+  opacity: 1;
+}
+
+.Toaster__Item {
+  box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+  max-width: 100%;
+  min-height: 52px;
+  padding: 8px 24px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  flex-wrap: nowrap;
+  background-color: #202124;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Toaster__Item__text {
+
+}
+.Toaster__Item__closeIcon {
+  margin-left: 24px;
+  font-size: 28px;
+  cursor: pointer;
+}
